@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1679042a512b6bb4eabe4273b847eff4, type: 3}
   m_Name: YukiOnna
   m_EditorClassIdentifier: 
-  _id: 0
-  _name: "\u96EA\u5973"
+  _nameOfAyakashi: "\u96EA\u5973"
   _where: "\u96EA\u304C\u964D\u3063\u3066\u3044\u308B\u5834\u6240"
   _when: "\u96EA\u304C\u964D\u3063\u3066\u3044\u308B\u6642\u671F"
   _appearance: "\u767D\u3044\u808C\uFF0F\u7740\u7269"

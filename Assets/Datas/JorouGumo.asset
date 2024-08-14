@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1679042a512b6bb4eabe4273b847eff4, type: 3}
   m_Name: JorouGumo
   m_EditorClassIdentifier: 
-  _name: "\u5973\u90CE\u8718\u86DB"
+  _nameOfAyakashi: "\u5973\u90CE\u8718\u86DB"
   _where: "\u5C71\u4E2D\uFF0F\u6D1E\u7A9F"
   _when: "\u306A\u3057"
   _appearance: "\u4E0A\u534A\u8EAB\u304C\u5973\uFF0F\u4E0B\u534A\u8EAB\u306F\u8718\u86DB"

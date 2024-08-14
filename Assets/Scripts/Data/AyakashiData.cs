@@ -14,7 +14,7 @@ public enum GenderType
 [CreateAssetMenu(menuName = "Scriptable / AyakashiData")]
 public class AyakashiData : ScriptableObject
 {
-    [SerializeField] private string _name = default;
+    [SerializeField] private string _nameOfAyakashi = default;
     [SerializeField] private string _where = default;
     [SerializeField] private string _when = default;
     [SerializeField, Header("見た目")] private string _appearance = default;
@@ -24,7 +24,7 @@ public class AyakashiData : ScriptableObject
     [SerializeField] private GenderType _gender = default;
     [SerializeField][TextArea(1,3)] private List<string> _otherList = default;
 
-    public string Name => _name;
+    public string NameOfAyakashi => _nameOfAyakashi;
     public string Where => _where;
     public string When => _when;
     public string Appearance => _appearance;
