@@ -20,8 +20,7 @@ public class TextSplitter : MonoBehaviour
 
     private void Start()
     {
-        // _textMessage = string.Empty;
-        foreach (var text in _textBoxes) text.text = string.Empty;
+        foreach (var text in _textBoxes) text.text = "依頼人の話のログが表示されます。";
     }
 
     private void Update()

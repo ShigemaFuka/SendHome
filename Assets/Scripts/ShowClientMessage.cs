@@ -33,6 +33,9 @@ public class ShowClientMessage : MonoBehaviour
     {
         _clientName = MakeName();
         _textSplitter = FindObjectOfType<TextSplitter>();
+        _text.text = string.Empty;
+        _text.text = "依頼人の話が表示されます。ログは「メモウィンドウ」に記載されます。" +
+                     "\n依頼人と電話がつながっています。さっそく依頼人に質問をしましょう。";
     }
 
     public void OnClick(string str)
@@ -41,40 +44,40 @@ public class ShowClientMessage : MonoBehaviour
         {
             case "Name":
                 var mark = new string('■', _replyData.NameOfAyakashi.Length);
-                _message = $"-----【名前】-----\n{mark}という妖怪だと思います。......「ノイズで聞こえない？」そうですか。" +
+                _message = $"ーー【名前】ーー\n{mark}という妖怪だと思います。......「ノイズで聞こえない？」そうですか。" +
                            $"名前だけ聞こえないなんて、本当にあれは妖怪なんですね。";
                 break;
             case "Age":
-                _message = $"-----【年齢】-----\n{_replyData.Age}";
+                _message = $"ーー【年齢】ーー\n{_replyData.Age}";
                 break;
             case "When":
-                _message = $"-----【いつ】-----\n{_replyData.When}";
+                _message = $"ーー【いつ】ーー\n{_replyData.When}";
                 break;
             case "Where":
-                _message = $"-----【どこで】-----\n{_replyData.Where}";
+                _message = $"ーー【どこで】ーー\n{_replyData.Where}";
                 break;
             case "Who":
-                _message = $"-----【誰が】-----\n{_replyData.Who}";
+                _message = $"ーー【誰が】ーー\n{_replyData.Who}";
                 break;
             case "Look":
-                _message = $"-----【外見】-----\n{_replyData.Appearance}";
+                _message = $"ーー【外見】ーー\n{_replyData.Appearance}";
                 break;
             case "Gender":
-                _message = $"-----【性別】-----\n{_replyData.Gender}";
+                _message = $"ーー【性別】ーー\n{_replyData.Gender}";
                 break;
             case "AboutYou":
-                _message = $"-----【依頼人について】-----" +
+                _message = $"ーー【依頼人について】ーー" +
                            $"\n{_clientName}です。お祓いをしてもらいたくて電話しました。　{_replyData.AboutYou}";
                 break;
             case "Other":
                 var random = Random.Range(0, _replyData.OtherList.Count);
-                _message = $"-----【その他】-----\n{_replyData.OtherList[random]}";
+                _message = $"ーー【その他】ーー\n{_replyData.OtherList[random]}";
                 break;
             case "Ritual":
-                _message = $"-----【儀式】-----\n{_replyData.Ritual}";
+                _message = $"ーー【儀式】ーー\n{_replyData.Ritual}";
                 break;
             case "Cause":
-                _message = $"-----【接触】-----\n{_replyData.Cause}";
+                _message = $"ーー【接触】ーー\n{_replyData.Cause}";
                 break;
         }
 
