@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 2473241}
   - component: {fileID: 2473240}
   - component: {fileID: 2473239}
+  - component: {fileID: 2473242}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -217,6 +218,18 @@ MonoBehaviour:
           m_StringArgument: TakeMission
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2473242}
+        m_TargetAssemblyTypeName: PlaySEByButton, Assembly-CSharp
+        m_MethodName: OnClickSeControllerSE
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2473240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,6 +268,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2473237}
   m_CullTransparentMesh: 1
+--- !u!114 &2473242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2473237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b944b5389f48654da821319fbafe225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _se: 2
+  _normalSe: 4
 --- !u!1 &6888276
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.200012, y: 50}
+  m_AnchoredPosition: {x: 15.199951, y: 50}
   m_SizeDelta: {x: -135.72, y: -300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16176224
@@ -420,6 +447,7 @@ GameObject:
   - component: {fileID: 101385077}
   - component: {fileID: 101385078}
   - component: {fileID: 101385079}
+  - component: {fileID: 101385080}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -508,6 +536,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
+--- !u!114 &101385080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101385072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab4409e32557af4a946301472bdd1b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &186183595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -941,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -567.19, y: 5.5799866}
+  m_AnchoredPosition: {x: -567.19, y: 5.579956}
   m_SizeDelta: {x: -1234.37, y: -111.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &621244148
@@ -1153,7 +1193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 570, y: 5.5799866}
+  m_AnchoredPosition: {x: 570, y: 5.579956}
   m_SizeDelta: {x: -1224.9, y: -111.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1140133176
@@ -1207,6 +1247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1163904858}
+  - component: {fileID: 1163904859}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -1236,6 +1277,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1163904859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163904857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b944b5389f48654da821319fbafe225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _se: 0
+  _normalSe: 0
 --- !u!1 &1167577193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15, y: 5.5799866}
+  m_AnchoredPosition: {x: -15, y: 5.579956}
   m_SizeDelta: {x: -1239.04, y: -111.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378493410
@@ -2038,10 +2093,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2528554264000527303, guid: 7dafa24730e06bd43965c3fb02d2d356, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6351901464915939345, guid: 7dafa24730e06bd43965c3fb02d2d356, type: 3}
       propertyPath: m_Name
       value: EffectController

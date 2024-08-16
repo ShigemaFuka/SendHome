@@ -53,6 +53,15 @@ public class SEController : MonoBehaviour
 
             /// <summary> 電話が切れる ブツッ ツーツーツー </summary>
             HangUp,
+
+            /// <summary> 成功 </summary>
+            Success,
+
+            /// <summary> 失敗 </summary>
+            Failure,
+            DeleteSaveData,
+            NoHit,
+            None
         }
     }
 }

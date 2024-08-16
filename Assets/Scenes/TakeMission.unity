@@ -666,7 +666,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b944b5389f48654da821319fbafe225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _se: 2
+  _se: 0
+  _normalSe: 0
 --- !u!1 &949811144
 GameObject:
   m_ObjectHideFlags: 0
@@ -3210,10 +3211,6 @@ PrefabInstance:
     - target: {fileID: 3320391883924730389, guid: ac025e9c0b39ed04b8d3bc4dd25f166f, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6537395999065021044, guid: ac025e9c0b39ed04b8d3bc4dd25f166f, type: 3}
-      propertyPath: _seClass.Array.data[0]._volume
-      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8227152988082712884, guid: ac025e9c0b39ed04b8d3bc4dd25f166f, type: 3}
       propertyPath: m_LocalPosition.x

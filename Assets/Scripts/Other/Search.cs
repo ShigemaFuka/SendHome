@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Reflection;
+
 /// <summary>
 /// 名前検索でヒットした場合は、対象の情報をすべて表示する。
 /// 名前以外で一部でも一致していたら、対象となるすべての名前を出力する。
@@ -65,6 +66,7 @@ public class Search : MonoBehaviour
         {
             ShowText("\n該当するものが何もありませんでした。\n\nキーワードの変更や項目の変更を検討してください。" +
                      "\n\n依頼人の話にヒントがあるでしょう。\n");
+            SEController.Instance.SePlay(SEController.SeClass.SE.NoHit);
         }
     }
 

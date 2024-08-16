@@ -38,6 +38,7 @@ public class JudgeName : MonoBehaviour
             child.SetActive(true);
             _saveLoadManager.Save(name);
             StartCoroutine(Late(child, 0));
+            SEController.Instance.SePlay(SEController.SeClass.SE.Success);
             Debug.Log("一致");
         }
         else
@@ -46,6 +47,7 @@ public class JudgeName : MonoBehaviour
             child.SetActive(true);
             StartCoroutine(Late(child, 1));
             _isGameOver = _fudaController.Decrease();
+            SEController.Instance.SePlay(SEController.SeClass.SE.Failure);
             Debug.Log("不一致");
         }
     }

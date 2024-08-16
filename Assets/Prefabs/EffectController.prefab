@@ -306,9 +306,12 @@ MonoBehaviour:
   _bgmAudio: {fileID: 2528554264000527303}
   _effectClass: []
   _seClass:
-  - _seClip: {fileID: 8300000, guid: 70bfd580c3e82eb489bbce5cb21a7fbb, type: 3}
+  - _seClip: {fileID: 8300000, guid: cd81762fc47e7134aaab93849793f4ca, type: 3}
     _seState: 0
     _volume: 1
+  - _seClip: {fileID: 8300000, guid: c56ffeae403291d47b4a1abd5abcf4fe, type: 3}
+    _seState: 1
+    _volume: 0.2
   _bgmClass:
   - _bgmClip: {fileID: 8300000, guid: 0efae4366d7c4db43a1cf3fb2dfa4096, type: 3}
     _bgmState: 0

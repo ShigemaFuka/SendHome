@@ -145,7 +145,19 @@ MonoBehaviour:
   _seClass:
   - _seClip: {fileID: 8300000, guid: 70bfd580c3e82eb489bbce5cb21a7fbb, type: 3}
     _seState: 0
-    _volume: 1
+    _volume: 0.3
   - _seClip: {fileID: 8300000, guid: 508cd33e22d09cb49a9f5c00a71901d3, type: 3}
     _seState: 1
+    _volume: 1
+  - _seClip: {fileID: 8300000, guid: c06c298e74feb0045b9ab7ce86c808a4, type: 3}
+    _seState: 2
+    _volume: 1
+  - _seClip: {fileID: 8300000, guid: 71c7661bf4dc6d94fbf690dc4b70e974, type: 3}
+    _seState: 3
+    _volume: 1
+  - _seClip: {fileID: 8300000, guid: 6af5b385907e30745bde950340b1d223, type: 3}
+    _seState: 4
+    _volume: 1
+  - _seClip: {fileID: 8300000, guid: 6efd9930a555f434fba72303f91932bf, type: 3}
+    _seState: 5
     _volume: 1

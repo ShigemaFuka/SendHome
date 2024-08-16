@@ -85,6 +85,7 @@ public class EffectController : MonoBehaviour
 
         public enum Effect
         {
+            None
         }
     }
 
@@ -107,6 +108,10 @@ public class EffectController : MonoBehaviour
         {
             /// <summary> 電話を取る </summary>
             PickUp,
+            
+            /// <summary> カーソル </summary>
+            Click,
+            None
         }
     }
 
@@ -131,7 +136,8 @@ public class EffectController : MonoBehaviour
             Failure,
 
             /// <summary> 危機的 </summary>
-            Critical
+            Critical,
+            None
         }
     }
 }
