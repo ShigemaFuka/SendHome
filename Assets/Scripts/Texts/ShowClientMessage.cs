@@ -1,14 +1,15 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
+using DG.Tweening;
 
 /// <summary>
 /// 依頼人の証言内容を表示する
 /// </summary>
 public class ShowClientMessage : MonoBehaviour
 {
+    [SerializeField, Header("文字送りの速度")] private float _speed = 0.5f;
     [SerializeField] private AyakashiData _ayakashiData = default;
     [SerializeField] private ReplyData _replyData = default;
     [SerializeField] private Text _text = default;
@@ -34,8 +35,11 @@ public class ShowClientMessage : MonoBehaviour
         _clientName = MakeName();
         _textSplitter = FindObjectOfType<TextSplitter>();
         _text.text = string.Empty;
-        _text.text = "依頼人の話が表示されます。ログは「メモウィンドウ」に記載されます。" +
+        // _text.text = "依頼人の話が表示されます。ログは「メモウィンドウ」に記載されます。" +
+        //              "\n依頼人と電話がつながっています。さっそく依頼人に質問をしましょう。";
+        var str = "依頼人の話が表示されます。ログは「メモウィンドウ」に記載されます。" +
                      "\n依頼人と電話がつながっています。さっそく依頼人に質問をしましょう。";
+        _text.DOText(str, _speed).SetEase(Ease.Linear);
     }
 
     public void OnClick(string str)
@@ -81,7 +85,9 @@ public class ShowClientMessage : MonoBehaviour
                 break;
         }
 
-        _text.text = _message;
+        // _text.text = _message;
+        _text.text = string.Empty;
+        _text.DOText(_message, _speed).SetEase(Ease.Linear);
         _textSplitter.AddMemo(_message);
     }
 

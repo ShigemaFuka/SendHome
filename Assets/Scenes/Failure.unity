@@ -8371,6 +8371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe35e23a0ca541e4b8d9e8a0011fbe66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 0.5
   _displayText: {fileID: 1394477420143967951}
   _messages:
   - "\u3048\u3063\u3001\u3001\u3001"
