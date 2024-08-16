@@ -3,15 +3,18 @@ using UnityEngine;
 
 /// <summary>
 /// エフェクト(パーティクルシステム)、BGM、SEを再生する
+/// シーン間をまたいでも再生
 /// </summary>
 public class EffectController : MonoBehaviour
 {
     public static EffectController Instance = default;
+    [SerializeField] private AudioSource _seAudio = default;
     [SerializeField] private AudioSource _bgmAudio = default;
 
     [SerializeField, Tooltip("パーティクルシステムなどのエフェクト")]
     private EffectClass[] _effectClass = default;
 
+    [SerializeField] private SeClass[] _seClass = default;
     [SerializeField] private BgmClass[] _bgmClass = default;
 
     private void Awake()
@@ -37,6 +40,19 @@ public class EffectController : MonoBehaviour
 
         //_seAudio?.PlayOneShot(data?.SeClip);
         data?.ParticleSystem.Play();
+    }
+
+    public void SePlay(SeClass.SE se)
+    {
+        SeClass data = null;
+        foreach (var playSe in _seClass)
+        {
+            if (playSe.SeState != se) continue;
+            data = playSe;
+            break;
+        }
+
+        _seAudio?.PlayOneShot(data?.SeClip, data.Volume);
     }
 
     public void BgmPlay(BgmClass.BGM bgm)
@@ -69,6 +85,28 @@ public class EffectController : MonoBehaviour
 
         public enum Effect
         {
+        }
+    }
+
+    [Serializable]
+    public class SeClass
+    {
+        [SerializeField] private AudioClip _seClip = default;
+        [SerializeField] private SE _seState = default;
+        [SerializeField] private float _volume = 1f;
+
+        #region
+
+        public AudioClip SeClip => _seClip;
+        public SE SeState => _seState;
+        public float Volume => _volume;
+
+        #endregion
+
+        public enum SE
+        {
+            /// <summary> 電話を取る </summary>
+            PickUp,
         }
     }
 

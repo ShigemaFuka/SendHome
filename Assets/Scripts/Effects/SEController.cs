@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// シーン間をまたがないSE再生
+/// </summary>
 public class SEController : MonoBehaviour
 {
     public static SEController Instance = default;
@@ -48,11 +51,8 @@ public class SEController : MonoBehaviour
             /// <summary> 電話がかかる プルルルル </summary>
             Call,
 
-            /// <summary> 電話が切れる ブツッ </summary>
+            /// <summary> 電話が切れる ブツッ ツーツーツー </summary>
             HangUp,
-
-            /// <summary> 電話が切れる ツーツーツー </summary>
-            TuuTuu,
         }
     }
 }

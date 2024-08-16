@@ -9,10 +9,7 @@ public class TelAnimController : MonoBehaviour
 {
     [SerializeField] private float _intervalAnim = default;
     [SerializeField] private float _intervalCallSe = default;
-
     [SerializeField] private Animator _animator = default;
-
-    // [SerializeField] private AudioSource _audioSource = default;
     private SEController _seController = default;
     private static readonly int Shake = Animator.StringToHash("Shake");
     private WaitForSeconds _waitForSecondsAnim = default;
@@ -25,8 +22,6 @@ public class TelAnimController : MonoBehaviour
         _animator.SetTrigger(Shake);
         _seController = SEController.Instance;
         _seController.SePlay(SEController.SeClass.SE.Call);
-
-        // _audioSource.PlayOneShot(_audioSource.clip);
         StartCoroutine(PlayAnim());
         StartCoroutine(PlayCallSE());
     }

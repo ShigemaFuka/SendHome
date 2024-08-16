@@ -309,9 +309,6 @@ MonoBehaviour:
   - _seClip: {fileID: 8300000, guid: 70bfd580c3e82eb489bbce5cb21a7fbb, type: 3}
     _seState: 0
     _volume: 1
-  - _seClip: {fileID: 8300000, guid: 508cd33e22d09cb49a9f5c00a71901d3, type: 3}
-    _seState: 1
-    _volume: 1
   _bgmClass:
   - _bgmClip: {fileID: 8300000, guid: 0efae4366d7c4db43a1cf3fb2dfa4096, type: 3}
     _bgmState: 0
