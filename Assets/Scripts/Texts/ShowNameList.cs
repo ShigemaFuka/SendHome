@@ -26,8 +26,9 @@ public class ShowNameList : MonoBehaviour
     {
         foreach (var text in _texts)
         {
-            text.text = "";
+            text.text = list.Count == 0 ? "記録がない" : "";
         }
+
 
         // 1つのテキストコンポーネントあたりのアイテム数を計算
         var itemsPerText = Mathf.CeilToInt((float)list.Count / _texts.Length);
