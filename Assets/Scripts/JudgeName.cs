@@ -11,6 +11,7 @@ public class JudgeName : MonoBehaviour
     private string _nameOfAyakashi = default; // 祓う妖怪の名前
     private FudaController _fudaController = default;
     private bool _isGameOver = default;
+    private SaveLoadManager _saveLoadManager = default;
 
     /// <summary> 祓う妖怪の名前 </summary>
     public string NameOfAyakashi
@@ -22,6 +23,7 @@ public class JudgeName : MonoBehaviour
     private void Start()
     {
         _fudaController = FindObjectOfType<FudaController>();
+        _saveLoadManager = FindObjectOfType<SaveLoadManager>();
     }
 
     private void Judge(string name)
@@ -34,8 +36,7 @@ public class JudgeName : MonoBehaviour
         {
             var child = _uiObject.transform.GetChild(0).gameObject;
             child.SetActive(true);
-            // todo: 還した妖怪の名前を保存
-            // 
+            _saveLoadManager.Save(name);
             StartCoroutine(Late(child, 0));
             Debug.Log("一致");
         }

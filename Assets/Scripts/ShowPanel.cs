@@ -8,7 +8,7 @@ public class ShowPanel : MonoBehaviour
     {
         var flag = go.activeSelf;
 
-        _textSplitter.DisplayText();
+        if (_textSplitter) _textSplitter.DisplayText();
         go.SetActive(!flag);
     }
 }
