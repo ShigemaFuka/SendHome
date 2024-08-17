@@ -14,6 +14,10 @@ public class BGMChanger : MonoBehaviour
         {
             _effectController.BgmPlay(EffectController.BgmClass.BGM.Failure);
         }
+        else if(_name == "Opening")
+        {
+            _effectController.BgmPlay(EffectController.BgmClass.BGM.Opening);
+        }
         else
         {
             _effectController.BgmPlay(EffectController.BgmClass.BGM.Normal);

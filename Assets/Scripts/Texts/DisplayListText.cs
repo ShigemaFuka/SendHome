@@ -18,6 +18,7 @@ public class DisplayListText : MonoBehaviour
 
     /// <summary> 現在表示しているリストのインデックス </summary>
     public int CurrentIndex => _currentIndex;
+    public int LengthOfMessages => _messages.Count;
 
     private void Start()
     {

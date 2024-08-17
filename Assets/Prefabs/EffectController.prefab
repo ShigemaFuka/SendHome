@@ -318,4 +318,7 @@ MonoBehaviour:
     _volume: 0.2
   - _bgmClip: {fileID: 8300000, guid: 49dd01da5b5c22645af681d2471bfb72, type: 3}
     _bgmState: 1
-    _volume: 1
+    _volume: 0.9
+  - _bgmClip: {fileID: 8300000, guid: a5b49778f8b4026448e21c82ee32c92e, type: 3}
+    _bgmState: 3
+    _volume: 0.3

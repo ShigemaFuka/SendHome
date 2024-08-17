@@ -72,6 +72,11 @@ public class JudgeName : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         if (n == 0)
         {
+            yield return new WaitForSeconds(1.0f);
+            // todo: メッセージ表示
+            go.SetActive(false);
+            _uiObject.transform.GetChild(2).gameObject.SetActive(true);
+            yield return new WaitForSeconds(3.5f);
             SceneManager.LoadScene("TakeMission");
         }
         else

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1679042a512b6bb4eabe4273b847eff4, type: 3}
+  m_Name: YukiOni
+  m_EditorClassIdentifier: 
+  _nameOfAyakashi: "\u96EA\u9B3C"
+  _where: "\u5834\u6240\uFF1A\u96EA\u304C\u964D\u3063\u3066\u3044\u308B\u5834\u6240"
+  _when: "\u6642\u671F\uFF1A\u96EA\u304C\u964D\u3063\u3066\u3044\u308B\u6642\u671F"
+  _appearance: "\u898B\u305F\u76EE\uFF1A\u767D\u3044\u808C\uFF0F\u7740\u7269\uFF0F\u767D\u9AEA"
+  _ritual: "\u5100\u5F0F\uFF1A\u306A\u3057"
+  _target: "\u5BFE\u8C61\uFF1A\u4E0D\u554F"
+  _age: "\u5E74\u9F62\uFF1A\u4E0D\u660E"
+  _gender: "\u6027\u5225\uFF1A\u7537"
+  _otherList:
+  - "\u808C\u304C\u6C37\u306E\u3088\u3046\u306B\u51B7\u305F\u3044\u3002"
+  - "\u767D\u3044\u7740\u7269\u3092\u7740\u3066\u3044\u308B\u3002"
+  - "\u96EA\u304C\u964D\u308B\u6642\u671F\u306B\u65C5\u4EBA\u3092\u51CD\u3048\u3055\u305B\u3066\u6BBA\u3059\u3002"
+  - "\u51B7\u305F\u3044\u606F\u3067\u76F8\u624B\u3092\u51CD\u6B7B\u3055\u305B\u308B\u3053\u3068\u304C\u3042\u308B\u3002"
+  - "\u89E6\u308C\u305F\u3082\u306E\u304C\u51CD\u308B\u3002"

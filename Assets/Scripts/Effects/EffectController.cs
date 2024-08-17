@@ -142,6 +142,7 @@ public class EffectController : MonoBehaviour
 
             /// <summary> 危機的 </summary>
             Critical,
+            Opening,
             None
         }
     }
