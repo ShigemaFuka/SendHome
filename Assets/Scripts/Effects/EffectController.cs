@@ -70,6 +70,11 @@ public class EffectController : MonoBehaviour
         _bgmAudio.Play();
     }
 
+    public void BgmStop()
+    {
+        _bgmAudio.Stop();
+    }
+
     [Serializable]
     public class EffectClass
     {
@@ -108,7 +113,7 @@ public class EffectController : MonoBehaviour
         {
             /// <summary> 電話を取る </summary>
             PickUp,
-            
+
             /// <summary> カーソル </summary>
             Click,
             None

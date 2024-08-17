@@ -37,7 +37,7 @@ public class ShowClientMessage : MonoBehaviour
         _text.text = string.Empty;
         // _text.text = "依頼人の話が表示されます。ログは「メモウィンドウ」に記載されます。" +
         //              "\n依頼人と電話がつながっています。さっそく依頼人に質問をしましょう。";
-        var str = "依頼人の話が表示されます。ログは「メモウィンドウ」に記載されます。" +
+        var str = "依頼人の話が表示されます。過去の記録は【書記】に記載されます。" +
                      "\n依頼人と電話がつながっています。さっそく依頼人に質問をしましょう。";
         _text.DOText(str, _speed).SetEase(Ease.Linear);
     }

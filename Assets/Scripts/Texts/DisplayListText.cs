@@ -4,19 +4,24 @@ using System.Collections.Generic;
 using DG.Tweening;
 
 /// <summary>
+/// リストの要素（テキスト）を順に表示
 /// 失敗時の依頼人のセリフ
 /// 次の依頼を受けるかどうかの選択ボタンを表示
 /// </summary>
 public class DisplayListText : MonoBehaviour
 {
     [SerializeField, Header("文字送りの速度")] private float _speed = 1f;
-    [SerializeField] private Text _displayText = default; // 表示するテキストコンポーネント
+    [SerializeField] private Text _displayText = default;
     [SerializeField] [TextArea(1, 3)] private List<string> _messages = default;
     [SerializeField, Header("表示したいObj")] private GameObject[] _gameObjects = default;
     private int _currentIndex = 0; // 現在表示しているリストのインデックス
 
+    /// <summary> 現在表示しているリストのインデックス </summary>
+    public int CurrentIndex => _currentIndex;
+
     private void Start()
     {
+        _currentIndex = 0;
         // 初期表示
         if (_messages.Count > 0)
         {
