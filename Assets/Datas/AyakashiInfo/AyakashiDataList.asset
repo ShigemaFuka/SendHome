@@ -13,5 +13,22 @@ MonoBehaviour:
   m_Name: AyakashiDataList
   m_EditorClassIdentifier: 
   _ayakashiDataList:
+  - {fileID: 11400000, guid: 88b272b02e4b4c341a8a9b6fc4728b7e, type: 2}
   - {fileID: 11400000, guid: 1c4031b3ca3242848a555009e8e549f3, type: 2}
+  - {fileID: 11400000, guid: 090d98c13b6ac61448b6066cb2acf934, type: 2}
+  - {fileID: 11400000, guid: a6bd5eca5ff6ac1418a3f657479b4e2c, type: 2}
+  - {fileID: 11400000, guid: 0d1d7b51117f1304ea76dca1a62a8695, type: 2}
+  - {fileID: 11400000, guid: d23a33fd0d79b294c99141068feb67ed, type: 2}
+  - {fileID: 11400000, guid: 04d0e543252256b4f81c5065831bd478, type: 2}
+  - {fileID: 11400000, guid: 70bdfca9572924742b469a5608c71c32, type: 2}
+  - {fileID: 11400000, guid: b8d31f59c0d83e54ba34cb8a90eef500, type: 2}
+  - {fileID: 11400000, guid: 9689d6c9a0073284882616788371d0d0, type: 2}
+  - {fileID: 11400000, guid: a8d2e52b502ffdf48a7fce987f07163c, type: 2}
+  - {fileID: 11400000, guid: 613aec6b428c53b499ebbe4fbef29ebe, type: 2}
+  - {fileID: 11400000, guid: 80fa2c76de07013419885bf39b972520, type: 2}
+  - {fileID: 11400000, guid: 5bda35d49f7617548bb9647404d79be7, type: 2}
+  - {fileID: 11400000, guid: ffc71c695997fb544aaf2465ad8e82e4, type: 2}
+  - {fileID: 11400000, guid: f8a15c15241a25a469eb40f447c2ae13, type: 2}
+  - {fileID: 11400000, guid: 58f7c92faf4ddeb4eacb24df1fb753dd, type: 2}
+  - {fileID: 11400000, guid: 7e461165977a7cb4b8420c977700ba7f, type: 2}
   - {fileID: 11400000, guid: 2fb53a574cca46d4caca9c579396bdcc, type: 2}

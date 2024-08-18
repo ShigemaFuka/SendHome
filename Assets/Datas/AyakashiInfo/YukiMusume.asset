@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1679042a512b6bb4eabe4273b847eff4, type: 3}
-  m_Name: YukiOnna
+  m_Name: YukiMusume
   m_EditorClassIdentifier: 
-  _nameOfAyakashi: "\u96EA\u5973"
+  _nameOfAyakashi: "\u96EA\u5A18"
   _where: "\u5834\u6240\uFF1A\u96EA\u304C\u964D\u3063\u3066\u3044\u308B\u5834\u6240"
   _when: "\u6642\u671F\uFF1A\u96EA\u304C\u964D\u3063\u3066\u3044\u308B\u6642\u671F"
   _appearance: "\u898B\u305F\u76EE\uFF1A\u767D\u3044\u808C\uFF0F\u7740\u7269\uFF0F\u9ED2\u9AEA"
   _ritual: "\u5100\u5F0F\uFF1A\u306A\u3057"
   _target: "\u5BFE\u8C61\uFF1A\u7537\u6027"
-  _age: "\u5E74\u9F62\uFF1A20\uFF5E30\u4EE3"
+  _age: "\u5E74\u9F62\uFF1A10\u6B73\u524D\u5F8C"
   _gender: "\u6027\u5225\uFF1A\u5973"
   _otherList:
   - "\u808C\u304C\u6C37\u306E\u3088\u3046\u306B\u51B7\u305F\u3044\u3002"
